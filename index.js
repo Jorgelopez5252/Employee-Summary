@@ -17,7 +17,69 @@ const Intern = require("./lib/constructors/Intern");
 //   new Intern("Shelly", 4, "shelly@shelly.com", "UofA")
 // ];
 
-const teamMembers =[];
+
+
+
+
+function managerprompt(){
+  inquirer.prompt(
+    [
+      {
+        type: "input",
+        name: "mangerName",
+        message: "what is your name?"
+      },
+      {
+        type: "input",
+        name:"id",
+        message: "What is your ID number"
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is your email?"
+      },
+      {
+        type: "input",
+        name: "officeNumber",
+        message: "What is your office number?"
+      }
+    ]
+  ).then(function (response){
+    const {mangerName, id, email, officeNumber} = response;
+    console.log(response)
+  });
+  
+  };
+  managerprompt();
+
+// const teamMembers = [
+//   {
+//     type: "input",
+//     name: "name",
+//     message: "What is the name of the Employee?"
+//   },
+//   {
+//     type: "list",
+//     message: "What type of employee is this?",
+//     choices: ["Engineer", "Intern"]
+//   },
+//   {
+//     type: "input",
+//     id: "id",
+//     message: "What is the employee number/id?"
+//   },
+//   {
+//     type: "input",
+//     email: "email",
+//     message: "What is the email associated with this employee?"
+//   },
+//   {
+//     type: "input",
+//     gitHub: "github",
+//     message: "What is the gitHub account associated with this employee?"
+//   },
+// ];
 /***
  * THIS PROJECT IS NOT COMPLETE.
  * YOU WILL NEED TO BUILD YOUR HTML LAYOUTS
@@ -28,4 +90,4 @@ async function init() {
   render(teamMembers);
 }
 
-init();
+// init();
