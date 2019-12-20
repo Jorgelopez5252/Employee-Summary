@@ -18,9 +18,6 @@ const Intern = require("./lib/constructors/Intern");
 // ];
 
 
-
-
-
 function managerprompt(){
   inquirer.prompt(
     [

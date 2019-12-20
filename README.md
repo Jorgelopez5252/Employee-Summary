@@ -21,7 +21,7 @@ This is Employee generator which allows you to create new users and assign them 
 
 
 
-![Image](public/assets/images/Capture1.PNG)    
+![Image](assets/images/Capture1.PNG)    
 ​
 
 ​
